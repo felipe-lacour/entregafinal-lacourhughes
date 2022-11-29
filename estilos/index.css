@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  width: 100%;
 }
 
 body {
@@ -29,7 +30,6 @@ header{
   align-items: center;
   justify-content: space-between;
   max-width: 1080px;
-  min-width: 861px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -88,7 +88,6 @@ header{
   column-gap: 10px;
   text-align: justify;
   text-justify: inter-word;
-  min-width: 861px;
   max-width: 1080px;
 }
 .tendencias__contenido,
@@ -521,4 +520,34 @@ footer {
 .noexiste a {
   text-decoration: none;
   color: rgb(217, 48, 48);
+}
+
+/* responsive mobile last */
+/* responsive index */
+@media (max-width: 861px){
+  .input__bar{
+    display: none;
+  }
+  .main__index{
+    max-width: 700px;
+    margin: 50px auto;
+  }
+  .tendencias__contenido{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 200px;
+    row-gap: 10px;
+  }
+
+  .nuevos__lanzamientos-carteleras{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .imagenes__poster{
+    width: 250px;
+    height: 375px;
+  }
 }
