@@ -260,7 +260,7 @@ form {
 /* main contenido tendencias */
 .contenido {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-flow: column nowrap;
   max-width: 1080px;
   min-width: 861px;
