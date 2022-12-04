@@ -73,6 +73,7 @@ header{
   border-color: rgb(156, 166, 196);
   color: rgb(156, 166, 196);
   padding: 0px 15px;
+  outline: none;
 }
 
 .nav__bar {
@@ -273,8 +274,8 @@ p {
   font-size: 30px;
 }
 .contenido__multi {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 250px;
 }
 .contenido__multi-trailer{
   width: 711px;
@@ -320,6 +321,7 @@ p {
   background-color: rgb(13, 13, 13);
   word-wrap: nowrap;
   min-width: 1080px;
+  text-align: center;
 }
 
 /* main contenido black adam*/
@@ -357,7 +359,9 @@ main{
 }
 
 .info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  column-gap: 50px;
   margin: 50px auto;
   max-width: 1080px;
   min-width: 861px;
@@ -378,9 +382,7 @@ main{
   height: 400px;
   overflow-y: scroll;
 }
-
-.info__img {
-  margin: 0 0 0 50px;
+.info__img{
   padding-top: 50px;
 }
 
@@ -399,6 +401,18 @@ main{
 .elenco__actores{
   display: flex;
   justify-content: space-around;
+}
+
+.elenco__actores-actor{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.elenco__actores-actor div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .elenco__actores-individuales--img{
