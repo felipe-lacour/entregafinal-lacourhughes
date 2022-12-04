@@ -20,6 +20,18 @@ h3{
   margin-bottom: 15px;
 }
 
+button{
+  transition: opacity 0.15s;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+button:active{
+  opacity: 0.6;
+}
+
 /* header */
 header{
   background-color: rgb(40, 46, 64);
@@ -29,7 +41,6 @@ header{
   align-items: center;
   justify-content: space-between;
   max-width: 1080px;
-  min-width: 861px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -88,7 +99,6 @@ header{
   column-gap: 10px;
   text-align: justify;
   text-justify: inter-word;
-  min-width: 861px;
   max-width: 1080px;
 }
 .tendencias__contenido,
@@ -243,7 +253,6 @@ p {
   justify-content: flex-start;
   flex-flow: column nowrap;
   max-width: 1080px;
-  min-width: 861px;
   margin: 50px auto;
 }
 .contenido__titulo{
@@ -407,9 +416,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   max-width: 1080px;
-  min-width: 861px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 15px;
 }
 
 
@@ -531,10 +540,18 @@ footer {
     max-width: 700px;
     margin: 50px auto;
   }
+
+  .tendencias{
+    padding: 0 15px;
+  }
   .tendencias__contenido{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 200px;
     row-gap: 10px;
+  }
+
+  .nuevos__lanzamientos{
+    padding: 0 15px;
   }
 
   .nuevos__lanzamientos-carteleras{
