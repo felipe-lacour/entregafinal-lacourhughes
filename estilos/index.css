@@ -517,3 +517,41 @@ footer {
   text-decoration: none;
   color: rgb(217, 48, 48);
 }
+
+/* responsive mobile last */
+/* responsive index */
+@media (max-width: 861px){
+  h3{
+    text-align: center;
+  }
+  .input__bar{
+    display: none;
+  }
+  .main__index{
+    max-width: 700px;
+    margin: 50px auto;
+  }
+  .tendencias__contenido{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 200px;
+    row-gap: 10px;
+  }
+
+  .nuevos__lanzamientos-carteleras{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .nuevos__lanzamientos-carteleras--individuales{
+    width: 250px;
+  }
+
+  .imagenes__poster{
+    width: 250px;
+    height: 375px;
+  }
+
+}
