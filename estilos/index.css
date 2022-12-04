@@ -152,11 +152,6 @@ p {
   margin: 0;
 }
 
-form {
-  width: 75%;
-}
-
-
 /*nuevos lanzamientos index*/
 .nuevos__lanzamientos{
   text-align: left;
@@ -172,16 +167,13 @@ form {
 .nuevos__lanzamientos-carteleras--individuales{
   width: 200px;
 }
-
 .carteleras__titulo,
 .carteleras__fecha {
   margin: 5px 0;
 }
-
 .carteleras__boton-funcion{
   width: 100%;
 }
-
 .carteleras__boton-estilo {
   margin-top: 15px;
   width: 100%;
@@ -211,7 +203,9 @@ form {
   min-width: 861px;
 }
 .nuevos-lanzamientos{
-  display: flex;
+  display: grid;
+  grid-template-columns: 232px 1fr;
+  column-gap: 15px;
   height: 350px;
   margin-top: 50px;
 }
@@ -225,15 +219,16 @@ form {
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
-
+  justify-content: space-between;
 }
 .nuevos-lanzamientos__contenido-titulo {
   margin-top: 0;
   margin-bottom: 15px;
 }
 .nuevos-lanzamientos__contenido-texto{
-  height: 60%;
+  height: 175px;
   overflow-y: scroll;
+  text-align: justify;
 }
 .contenido__texto-sinopsis{
   margin: 0;
@@ -246,6 +241,11 @@ form {
 .nuevos-lanzamientos__contenido-info--flex {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.nuevos-lanzamientos__imgreview{
+  display: flex;
   justify-content: flex-end;
 }
 
