@@ -215,7 +215,6 @@ p {
   height: 350px;
 }
 .nuevos-lanzamientos__contenido {
-  margin-left: 25px;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
@@ -234,9 +233,9 @@ p {
   margin: 0;
 }
 .nuevos-lanzamientos__contenido-info{
-  display: flex;
+  display: grid;
   justify-content: space-between;
-
+  grid-template-columns: 1fr 125px;
 }
 .nuevos-lanzamientos__contenido-info--flex {
   display: flex;
