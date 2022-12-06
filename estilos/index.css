@@ -8,6 +8,8 @@ body {
   background-color: rgb(156, 166, 196);
   font-family: Roboto, Arial;
 }
+
+
 section{
   margin: 0 auto;
 }
@@ -56,6 +58,21 @@ header{
   background-color: rgb(40, 46, 64);
   color: rgb(217, 48, 48);
   cursor: pointer;
+  animation: animacion-logo 1s ease-in; 
+}
+
+@keyframes animacion-logo {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .film__logo {
@@ -115,7 +132,6 @@ header{
 .tendencias__info{
   width: 100%;
   height: 100%;
-  overflow: scroll;
 }
 iframe {
   width: 100%;
@@ -126,9 +142,9 @@ iframe {
   justify-content: center;
   margin-bottom: 10px;
 }
-
-.tendencias__info-texto {
-  overflow-x: scroll;
+.tendencias__info-texto,
+.tendencias__info-texto p{
+  overflow-y: scroll;
   height: 266px;
 }
 
@@ -163,6 +179,22 @@ p {
   justify-content: space-between;
 }
 
+.nuevos__lanzamientos-carteleras--individuales h6{
+  color: rgb(13, 13, 13);
+}
+.nuevos__lanzamientos-carteleras--individuales h4{
+  color: rgb(13, 13, 13);
+}
+.nuevos__lanzamientos-carteleras--individuales{
+  transition: 0.15s;
+}
+
+.nuevos__lanzamientos-carteleras--individuales:hover{
+  box-shadow: 0px 0px 20px rgba(13, 13, 13, 0.5);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
 .carteleras__titulo,
 .carteleras__fecha {
   margin: 5px 0;
@@ -183,6 +215,10 @@ p {
   cursor: pointer;
 }
 
+.boton-responsive{
+  display: none;
+}
+
 .imagenes__poster {
   width: 200px;
   height: 300px;
@@ -198,17 +234,20 @@ p {
 .window__contenido{
   margin: 0 auto;
   max-width: 1080px;
-  min-width: 861px;
 }
 .nuevos-lanzamientos{
   display: flex;
-  height: 350px;
   margin-top: 50px;
+  height: 350px;
+  padding: 0 15px;
 }
 
 .nuevos-lanzamientos__img img{
   width: 232px;
   height: 350px;
+}
+.nuevos-lanzamientos__imgreview-responsive{
+  display: none;
 }
 .nuevos-lanzamientos__contenido {
   margin-left: 25px;
@@ -227,6 +266,7 @@ p {
 }
 .contenido__texto-sinopsis{
   margin: 0;
+  text-align: justify;
 }
 .nuevos-lanzamientos__contenido-info{
   display: flex;
@@ -549,7 +589,11 @@ footer {
     grid-template-rows: 1fr 200px;
     row-gap: 10px;
   }
-
+  .tendencias__info-texto,
+  .tendencias__info-texto p{
+    overflow-y: scroll;
+    height: 175px;
+  }
   .nuevos__lanzamientos{
     padding: 0 15px;
   }
@@ -571,4 +615,129 @@ footer {
     height: 375px;
   }
 
+}
+
+@media (max-width: 554px){
+  .tendencias{
+    max-width: 390px;
+  }
+  .nuevos__lanzamientos{
+    max-width: 390px;
+  }
+  .nuevos-lanzamientos__contenido{
+    margin: 0 auto;
+  }
+  .nuevos__lanzamientos-carteleras{
+    grid-template-columns: auto;
+  }
+
+  .nuevos__lanzamientos-carteleras--individuales{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 250px;
+    width: 390px;
+    padding: 0 15px;
+  }
+
+  .nuevos__lanzamientos-carteleras--individuales div{
+    width: 167px;
+  }
+  .imagenes__poster{
+    height: 250px;
+    width: 167px;
+  }
+  .carteleras__boton-estilo{
+    margin: 0;
+  }
+  .boton-desktop{
+    display:none;
+  }
+  .boton-responsive{
+    display: inline-block;
+    height: 50px;
+  }
+  .responsive__carteleras-grid--index{
+    display: grid;
+    grid-template-rows: 40px 65.5px;
+    align-content: space-between;
+    height: 250px;
+  }
+  .responsive__carteleras-grid--index div{
+    width: 167px;
+  }
+
+  .carteleras-titulo--fecha{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    height: 65.5px;
+  }
+}
+
+/* responsive clasicos y nuevos lanzamientos */
+
+@media (max-width: 861px){
+
+  .nuevos-lanzamientos{
+    display: grid;
+    grid-template-rows: 1fr 353px;
+    row-gap: 20px;
+    max-width: 700px;
+    height: auto;
+    padding: 0;
+  }
+
+  .nuevos-lanzamientos__responsive--div{
+    display: grid;
+    grid-template-columns: 232px 200px;
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  .nuevos-lanzamientos__contenido{
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .nuevos-lanzamientos__contenido-titulo{
+    text-align: center;
+  }
+
+  .nuevos-lanzamientos__img{
+    width: 232px;
+  }
+
+  .nuevos-lanzamientos__imgreview-responsive{
+    display: flex;
+    width: 200px;
+    align-items: center;
+  }
+  .nuevos-lanzamientos__imgreview{
+    display: none;
+  }
+  .img__review-percentage{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 471px){
+  .nuevos-lanzamientos__responsive--div{
+    grid-template-columns: 155px 150px;
+    column-gap: 20px;
+  }
+  .nuevos-lanzamientos__img img{
+    height: 233px;
+    width: 155px;
+  }
+  .nuevos-lanzamientos__imgreview-responsive{
+    width: 150px;
+  }
+
+  .img__review-percentage{
+    height: 150px;
+    width: 150px;
+  }
 }
