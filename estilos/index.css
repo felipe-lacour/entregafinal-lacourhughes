@@ -106,6 +106,7 @@ header{
 .main__index{
   display: grid;
   gap: 50px;
+  padding: 0 15px;
 }
 .tendencias {
   text-align: left;
@@ -619,10 +620,12 @@ footer {
 
 @media (max-width: 554px){
   .tendencias{
-    max-width: 390px;
+    max-width: 350px;
+    margin: 0 5px;
   }
   .nuevos__lanzamientos{
-    max-width: 390px;
+    max-width: 340px;
+    margin: 0 auto;
   }
   .nuevos-lanzamientos__contenido{
     margin: 0 auto;
@@ -632,20 +635,20 @@ footer {
   }
 
   .nuevos__lanzamientos-carteleras--individuales{
-    display: flex; 
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    height: 250px;
-    width: 390px;
-    padding: 0 15px;
+    display: grid; 
+    grid-template-columns: repeat(2, 155px);
+    column-gap: 15px;
+    width: 330px;
+    height: 232.5px;
+    margin: 0 5px;
   }
 
   .nuevos__lanzamientos-carteleras--individuales div{
-    width: 167px;
+    width: 155px;
   }
   .imagenes__poster{
-    height: 250px;
-    width: 167px;
+    height: 232.5px;
+    width: 155px;
   }
   .carteleras__boton-estilo{
     margin: 0;
@@ -661,10 +664,10 @@ footer {
     display: grid;
     grid-template-rows: 40px 65.5px;
     align-content: space-between;
-    height: 250px;
+    height: 232.5px;
   }
   .responsive__carteleras-grid--index div{
-    width: 167px;
+    width: 155px;
   }
 
   .carteleras-titulo--fecha{
