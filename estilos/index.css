@@ -621,7 +621,7 @@ footer {
 @media (max-width: 554px){
   .tendencias{
     max-width: 350px;
-    margin: 0 5px;
+    margin: 0 auto;
   }
   .nuevos__lanzamientos{
     max-width: 340px;
