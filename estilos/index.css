@@ -608,14 +608,21 @@ footer {
 
   .nuevos__lanzamientos-carteleras{
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 270px);
     gap: 20px;
     justify-content: space-around;
     align-content: space-around;
   }
 
   .nuevos__lanzamientos-carteleras--individuales{
-    width: 250px;
+    width: 270px;
+    padding: 10px;
+  }
+
+  .nuevos__lanzamientos-carteleras--individuales:hover{
+    box-shadow: 0px 0px 20px rgba(13, 13, 13, 0.5);
+    border-radius: 10px;
+    transform: translateY(-10px);
   }
 
   .imagenes__poster{
@@ -648,6 +655,13 @@ footer {
     width: 330px;
     height: 232.5px;
     margin: 0 5px;
+    padding: 0;
+  }
+
+  .nuevos__lanzamientos-carteleras--individuales:hover{
+    box-shadow: 0px 0px 0px rgba(13, 13, 13, 0.5);
+    border-radius: 0px;
+    transform: translateY(0px);
   }
 
   .nuevos__lanzamientos-carteleras--individuales div{
