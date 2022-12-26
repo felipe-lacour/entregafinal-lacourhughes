@@ -41,13 +41,39 @@ header{
     }
   }
 
-  &__nav{
+  &__dropdown{
     margin-right: 20px;
-    text-align: right;
-
-    &-list{
-      list-style: none;
+    &-lista{
+      width: max-content;
+      padding: 15px;
+      background-color: rgb(40, 46, 64);
+      text-align: center;
+      border: 1px rgb(156, 166, 196) solid;
+      transition: all 0.3px;
+      &--item{
+        color: rgb(217, 48, 48);
+        font-weight: bold;
+      }
+    }
+    &-boton{
+      background-color: rgb(40, 46, 64);
+      color: rgb(217, 48, 48);
       font-weight: bold;
+      transition: 0.3s;
+      border: 1px rgb(156, 166, 196) solid;
+
+      &:hover{
+        opacity: 0.8;
+        color: rgb(217, 48, 48);
+        background-color: rgb(40, 46, 64);
+      }
+
+      &:active{
+        opacity: 0.6;
+        color: rgb(217, 48, 48);
+        background-color: rgb(40, 46, 64);
+      }
+      
     }
   }
 }

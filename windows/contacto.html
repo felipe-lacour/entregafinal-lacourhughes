@@ -4,6 +4,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>infoFilm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/ >
@@ -25,22 +27,25 @@
           <input class="header__input-bar" type="text" placeholder="Buscar..."/>
         </form>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
+      <div class="btn-group dropdown-center header__dropdown">
+        <button class="btn btn-secondary btn-md dropdown-toggle header__dropdown-boton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu header__dropdown-lista">
           <li>
-            <a class="header__nav-list--items" href="../index.html">Inicio</a>
+            <a class=" dropdown-item header__dropdown-lista--item" href="../index.html">Inicio</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="../windows/tendencias_window.html">Tendencias</a>
+            <a class="dropdown-item header__dropdown-lista--item" href="../windows/tendencias_window.html">Tendencias</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="../windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
+            <a class="dropdown-item header__dropdown-lista--item" href="../windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="../windows/clasicos_window.html">Clasicos</a>
+            <a class="header__dropdown-lista--item dropdown-item" href="../windows/clasicos_window.html">Clasicos</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </section>
   </header>
   <main>

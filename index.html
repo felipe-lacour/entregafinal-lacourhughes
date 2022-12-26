@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>infoFilm</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/ >
@@ -27,22 +28,25 @@
           <input class="header__input-bar" type="text" placeholder="Buscar..."/>
         </form>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
+      <div class="btn-group dropdown-center header__dropdown">
+        <button class="btn btn-secondary btn-md dropdown-toggle header__dropdown-boton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu header__dropdown-lista">
           <li>
-            <a class="header__nav-list--items" href="./index.html">Inicio</a>
+            <a class=" dropdown-item header__dropdown-lista--item" href="./index.html">Inicio</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="./windows/tendencias_window.html">Tendencias</a>
+            <a class="dropdown-item header__dropdown-lista--item" href="./windows/tendencias_window.html">Tendencias</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="./windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
+            <a class="dropdown-item header__dropdown-lista--item" href="./windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
           </li>
           <li>
-            <a class="header__nav-list--items" href="./windows/clasicos_window.html">Clasicos</a>
+            <a class="header__dropdown-lista--item dropdown-item" href="./windows/clasicos_window.html">Clasicos</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </section>
   </header>
   <main class="main__index">
@@ -84,7 +88,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">NOPE</h4>
+                <h4 class="carteleras__titulo h5">NOPE</h4>
                 <h6 class="carteleras__fecha">22/07/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
@@ -105,7 +109,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">THE GOOD NURSE</h4>
+                <h4 class="carteleras__titulo h5">THE GOOD NURSE</h4>
                 <h6 class="carteleras__fecha">11/09/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
@@ -126,7 +130,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">TOP GUN: MAVERICK</h4>
+                <h4 class="carteleras__titulo h5">TOP GUN: MAVERICK</h4>
                 <h6 class="carteleras__fecha">26/05/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
@@ -147,7 +151,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">THE BATMAN</h4>
+                <h4 class="carteleras__titulo h5">THE BATMAN</h4>
                 <h6 class="carteleras__fecha">04/03/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
@@ -175,7 +179,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">JURASSIC PARK</h4>
+                <h4 class="carteleras__titulo h5">JURASSIC PARK</h4>
                 <h6 class="carteleras__fecha">15/07/1993</h6>
               </div>
             </div>
@@ -196,7 +200,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">STAR WARS: EPISODE IV</h4>
+                <h4 class="carteleras__titulo h5">STAR WARS: EPISODE IV</h4>
                 <h6 class="carteleras__fecha">25/12/1977</h6>
               </div>
             </div>
@@ -217,7 +221,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">ROCKY</h4>
+                <h4 class="carteleras__titulo h5">ROCKY</h4>
                 <h6 class="carteleras__fecha">13/01/1977</h6>
               </div>
             </div>
@@ -238,7 +242,7 @@
                 </a>
               </div>
               <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
-                <h4 class="carteleras__titulo">SPIRITED AWAY</h4>
+                <h4 class="carteleras__titulo h5">SPIRITED AWAY</h4>
                 <h6 class="carteleras__fecha">17/07/2003</h6>
               </div>
             </div>
@@ -250,6 +254,7 @@
           </div>
         </div>
       </div>
+
     </section>
   </main>
   <footer>
@@ -263,6 +268,6 @@
       </div>
     </section>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
