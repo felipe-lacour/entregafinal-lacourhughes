@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>infoFilm</title>
-  <link rel="stylesheet" href="./Estilos/index.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/ >
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -12,34 +12,34 @@
 </head>
 <body>
   <header>
-    <section class="header__menu">
-      <div class="logo__pagina">
+    <section class="header">
+      <div class="header__logo">
         <a href="./index.html">
-          <button class="logo__pagina-boton">
-            info<span class="film__logo">Film</span>
+          <button class="header__logo-boton">
+            info<span class="header__logo-boton--film">Film</span>
           </button>
         </a>
       </div>
-      <div class="input__bar">
+      <div class="header__input">
         <form action="">
-          <input class="input__bar-buscar" type="text" placeholder="Buscar..."/>
+          <input class="header__input-bar" type="text" placeholder="Buscar..."/>
         </form>
       </div>
-      <nav class="nav__bar">
-        <ol class="nav__bar-list">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
           <li>
-            <a class="nav__bar-list--items" href="./index.html">Inicio</a>
+            <a class="header__nav-list--items" href="./index.html">Inicio</a>
           </li>
           <li>
-            <a class="nav__bar-list--items" href="./windows/tendencias_window.html">Tendencias</a>
+            <a class="header__nav-list--items" href="./windows/tendencias_window.html">Tendencias</a>
           </li>
           <li>
-            <a class="nav__bar-list--items" href="./windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
+            <a class="header__nav-list--items" href="./windows/nuevos-lanzamientos_window.html">Nuevos Lanzamientos</a>
           </li>
           <li>
-            <a class="nav__bar-list--items" href="./windows/clasicos_window.html">Clasicos</a>
+            <a class="header__nav-list--items" href="./windows/clasicos_window.html">Clasicos</a>
           </li>
-        </ol>
+        </ul>
       </nav>
     </section>
   </header>
@@ -52,8 +52,8 @@
         </div>
         <div class="tendencias__info">
           <div class="tendencias__info-boton">
-            <a href="./windows/ver_mas-blkadm.html" class="info-boton">
-              <button class="info-boton--funcion">
+            <a href="./windows/ver_mas-blkadm.html" class="tendencias__info-boton--hipervinculo">
+              <button class="tendencias__info-boton--funcion">
                 Ver Más
               </button>
             </a>
@@ -71,85 +71,85 @@
         <div class="nuevos__lanzamientos-carteleras">
           <div class="nuevos__lanzamientos-carteleras--individuales">
             <div>
-              <img class="imagenes__poster" src="./imagenes/nope-img.jpeg" alt="Nope" />
+              <img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/nope-img.jpeg" alt="Nope" />
             </div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/nuevos-lanzamientos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">NOPE</h4>
                 <h6 class="carteleras__fecha">22/07/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
-                <button class="carteleras__boton-estilo boton-desktop">
+                <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                   Ver Más
                 </button>
               </a>
             </div>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/good-nurse-img.webp" alt="The Good Nurse" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/good-nurse-img.webp" alt="The Good Nurse" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/nuevos-lanzamientos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">THE GOOD NURSE</h4>
                 <h6 class="carteleras__fecha">11/09/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
-                <button class="carteleras__boton-estilo boton-desktop">
+                <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                   Ver Más
                 </button>
               </a>
             </div>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/top-gun-img.jpeg" alt="Top Gun: Maverick" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/top-gun-img.jpeg" alt="Top Gun: Maverick" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/nuevos-lanzamientos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">TOP GUN: MAVERICK</h4>
                 <h6 class="carteleras__fecha">26/05/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
-                <button class="carteleras__boton-estilo boton-desktop">
+                <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                   Ver Más
                 </button>
               </a>
             </div>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/batman-img.jpg" alt="The Batman" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/batman-img.jpg" alt="The Batman" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/nuevos-lanzamientos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">THE BATMAN</h4>
                 <h6 class="carteleras__fecha">04/03/2022</h6>
               </div>
               <a href="./windows/nuevos-lanzamientos_window.html" class="carteleras__boton-funcion boton-desktop">
-                <button class="carteleras__boton-estilo boton-desktop">
+                <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                   Ver Más
                 </button>
               </a>
@@ -163,85 +163,85 @@
         <h3>Clasicos <a href="./windows/clasicos_window.html">Ver Más</a></h3>
         <div class="nuevos__lanzamientos-carteleras">
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/jurassic-img.jpeg" alt="JURASSIC PARK" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/jurassic-img.jpeg" alt="JURASSIC PARK" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/clasicos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">JURASSIC PARK</h4>
                 <h6 class="carteleras__fecha">15/07/1993</h6>
               </div>
             </div>
             <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-desktop">
-              <button class="carteleras__boton-estilo boton-desktop">
+              <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                 Ver Más
               </button>
             </a>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/starwars-img.jpeg" alt="Star Wars" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/starwars-img.jpeg" alt="Star Wars" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/clasicos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">STAR WARS: EPISODE IV</h4>
                 <h6 class="carteleras__fecha">25/12/1977</h6>
               </div>
             </div>
             <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-desktop">
-              <button class="carteleras__boton-estilo boton-desktop">
+              <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                 Ver Más
               </button>
             </a>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/rocky-img.jpeg" alt="Rocky" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/rocky-img.jpeg" alt="Rocky" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/clasicos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">ROCKY</h4>
                 <h6 class="carteleras__fecha">13/01/1977</h6>
               </div>
             </div>
             <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-desktop">
-              <button class="carteleras__boton-estilo boton-desktop">
+              <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                 Ver Más
               </button>
             </a>
           </div>
           <div class="nuevos__lanzamientos-carteleras--individuales">
-            <div><img class="imagenes__poster" src="./imagenes/spirited-img.jpg" alt="Spirited Away" /></div>
+            <div><img class="nuevos__lanzamientos-carteleras--individuales-imagenes__poster" src="./imagenes/spirited-img.jpg" alt="Spirited Away" /></div>
             <div class="responsive__carteleras-grid--index">
               <div>
-                <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-responsive">
-                  <button class="carteleras__boton-estilo boton-responsive">
+                <a href="./windows/clasicos_window.html" class="nuevos__lanzamientos--carteleras__boton-funcion boton-responsive">
+                  <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-responsive">
                     Ver Más
                   </button>
                 </a>
               </div>
-              <div class="carteleras-titulo--fecha">
+              <div class="nuevos__lanzamientos--carteleras-titulo--fecha">
                 <h4 class="carteleras__titulo">SPIRITED AWAY</h4>
                 <h6 class="carteleras__fecha">17/07/2003</h6>
               </div>
             </div>
             <a href="./windows/clasicos_window.html" class="carteleras__boton-funcion boton-desktop">
-              <button class="carteleras__boton-estilo boton-desktop">
+              <button class="nuevos__lanzamientos--carteleras__boton-estilo boton-desktop">
                 Ver Más
               </button>
             </a>

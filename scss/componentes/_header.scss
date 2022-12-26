@@ -1,0 +1,67 @@
+header{
+  background-color: rgb(40, 46, 64);
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  &__logo{
+    margin-left: 20px;
+
+    &-boton{
+      border: none;
+      font-weight: bold;
+      font-size: 40px;
+      background-color: rgb(40, 46, 64);
+      color: rgb(217, 48, 48);
+      cursor: pointer;
+      animation: animacion-logo 1s ease-in; 
+
+      &--film{
+        color: rgb(115, 72, 34);
+      }
+    }
+  }
+
+  &__input{
+    &-bar{
+      width: 500px;
+      height: 40px;
+      border-radius: 200px;
+      background-color: rgb(40, 46, 64);
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(156, 166, 196);
+      color: rgb(156, 166, 196);
+      padding: 0px 15px;
+    }
+  }
+
+  &__nav{
+    margin-right: 20px;
+    text-align: right;
+
+    &-list{
+      list-style: none;
+      font-weight: bold;
+    }
+  }
+}
+
+@keyframes animacion-logo {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

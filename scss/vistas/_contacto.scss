@@ -1,0 +1,74 @@
+.titulo__contacto {
+  margin: 25px auto;
+
+  h1{
+    text-align: center;
+  }
+}
+
+.form__contacto{
+  display: flex;
+  justify-content: center;
+
+  form{
+    margin: 0 auto;
+    width: 550px;
+  }
+
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nombre{
+  width: 260px;
+  height: 35px;
+  border: 2px solid rgb(40, 46, 64);
+  background-color: rgb(156, 166, 196);
+  color: rgb(40, 46, 64);
+  border-radius: 18px;
+  padding: 15px;
+}
+
+.email{
+  display: block;
+  width: 550px;
+  height: 35px;
+  border: 2px solid rgb(40, 46, 64);
+  background-color: rgb(156, 166, 196);
+  color: rgb(40, 46, 64);
+  border-radius: 18px;
+  padding: 15px;
+}
+
+.numero{
+  width: 550px;
+  height: 35px;
+  border: 2px solid rgb(40, 46, 64);
+  background-color: rgb(156, 166, 196);
+  color: rgb(40, 46, 64);
+  border-radius: 18px;
+  padding: 15px;
+}
+
+.boton__contacto{
+  display: block;
+  width: 550px;
+  height: 35px;
+  border: 0;
+  background-color: rgb(40, 46, 64);
+  color: rgb(156, 166, 196);
+  border-radius: 18px;
+}
+
+.nombre,
+.email,
+.numero,
+.boton__contacto{
+  margin: 5px 0;
+}
+
+.footer__contacto{
+  margin-top: 420px;
+}

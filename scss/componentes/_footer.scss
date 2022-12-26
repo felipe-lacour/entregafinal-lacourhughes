@@ -1,0 +1,33 @@
+footer {
+  background-color: rgb(40, 46, 64);
+  height: 108px;
+  margin-top: 50px;
+}
+.footer{
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
+  }
+
+  &__contenido{
+    &-texto{
+      color: rgb(156, 166, 196);
+      margin-top: 50px;
+    }
+  }
+
+  &__inicio{
+    &-link{
+      color: rgb(217, 48, 48);
+      font-weight: bold;
+      margin-left: 25px;
+    }
+  }
+}
+
+

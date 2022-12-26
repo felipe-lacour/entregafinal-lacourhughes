@@ -1,0 +1,141 @@
+@media (max-width: 861px){
+  h3{
+    text-align: center;
+  }
+  .header{
+    &__input{
+      display: none;
+    }
+  }
+  .main__index{
+    max-width: 700px;
+    margin: 50px auto;
+  }
+
+  .tendencias{
+    padding: 0 15px;
+
+    &__contenido{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 200px;
+      row-gap: 10px;
+    }
+
+    &__info{
+      &-texto{
+        overflow-y: scroll;
+        height: 175px;
+        p{
+          overflow-y: scroll;
+          height: 175px;
+        }
+      }
+    }
+  }
+
+  .nuevos__lanzamientos{
+    padding: 0 15px;
+
+    &-carteleras{
+      display: grid;
+      grid-template-columns: repeat(2, 270px);
+      gap: 20px;
+      justify-content: space-around;
+      align-content: space-around;
+
+      &--individuales{
+        width: 270px;
+        padding: 10px;
+
+        &:hover{
+          box-shadow: 0px 0px 20px rgba(13, 13, 13, 0.5);
+          border-radius: 10px;
+          transform: translateY(-10px);
+        }
+        
+        &-imagenes__poster{
+          width: 250px;
+          height: 375px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 554px){
+  .tendencias{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .nuevos__lanzamientos{
+    max-width: 340px;
+    margin: 0 auto;
+
+    &__contenido{
+      margin: 0 auto;
+    }
+
+    &-carteleras{
+      grid-template-columns: auto;
+
+      &--individuales{
+        display: grid; 
+        grid-template-columns: repeat(2, 155px);
+        column-gap: 15px;
+        width: 330px;
+        height: 232.5px;
+        margin: 0 5px;
+        padding: 0;
+
+        &:hover{
+          box-shadow: 0px 0px 0px rgba(13, 13, 13, 0.5);
+          border-radius: 0px;
+          transform: translateY(0px);
+        }
+        div{
+          width: 155px;
+        }
+
+        &-imagenes__poster{
+          height: 232.5px;
+          width: 155px;
+        }
+      }
+    }
+    &--carteleras{
+      &__boton{
+        &-estilo{
+          margin: 0;
+        }
+      }
+
+      &-titulo{
+        &--fecha{
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: flex-end;
+          height: 65.5px;
+        }
+      }
+    }
+  }
+
+  .boton-desktop{
+    display:none;
+  }
+  .boton-responsive{
+    display: inline-block;
+    height: 50px;
+  }
+  .responsive__carteleras-grid--index{
+    display: grid;
+    grid-template-rows: 40px 65.5px;
+    align-content: space-between;
+    height: 232.5px;
+
+    div{
+      width: 155px;
+    }
+  }
+
+}

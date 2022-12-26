@@ -1,0 +1,17 @@
+.noexiste{
+  h1{
+    text-align: center;
+  }
+
+  article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(217, 48, 48);
+  }
+}
