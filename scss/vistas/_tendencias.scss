@@ -2,8 +2,8 @@
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
-  max-width: 1080px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 0;
 
   &__titulo{
     text-align: center;
@@ -14,18 +14,11 @@
     }
   }
   &__multi{
-    display: flex;
-    justify-content: space-between;
-
     &-trailer{
-      width: 711px;
-    }
-
-    &-posterboton{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      margin-left: 15px;
+      iframe{
+        width: 100%;
+        max-width: 711px;
+      }
     }
 
     &-poster{
@@ -47,4 +40,8 @@
       }
     }
   }
+}
+
+.trailer-info{
+  margin-bottom: 50px;
 }

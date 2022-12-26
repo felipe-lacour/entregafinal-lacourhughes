@@ -269,35 +269,31 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
-  max-width: 1080px;
-  margin: 50px auto; }
+  margin: 0 auto;
+  padding: 0; }
   .contenido__titulo {
     text-align: center; }
     .contenido__titulo h2 {
       margin-bottom: 25px;
       font-size: 30px; }
-  .contenido__multi {
-    display: flex;
-    justify-content: space-between; }
-    .contenido__multi-trailer {
-      width: 711px; }
-    .contenido__multi-posterboton {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      margin-left: 15px; }
-    .contenido__multi-poster img {
-      height: 350px;
-      width: 233px; }
-    .contenido__multi-boton--estilo {
-      margin-top: 15px;
-      width: 233px;
-      height: 30px;
-      background-color: #282e40;
-      color: #9ca6c4;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer; }
+  .contenido__multi-trailer iframe {
+    width: 100%;
+    max-width: 711px; }
+  .contenido__multi-poster img {
+    height: 350px;
+    width: 233px; }
+  .contenido__multi-boton--estilo {
+    margin-top: 15px;
+    width: 233px;
+    height: 30px;
+    background-color: #282e40;
+    color: #9ca6c4;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; }
+
+.trailer-info {
+  margin-bottom: 50px; }
 
 /* div black adam*/
 .black-adam__fondo {
@@ -584,3 +580,9 @@ main {
   .nuevos-lanzamientos-img__review-percentage {
     height: 150px;
     width: 150px; } }
+
+@media (max-width: 991px) {
+  .contenido__multi-posterboton {
+    margin-top: 25px; }
+  .contenido__multi-boton--estilo {
+    height: 50px; } }
