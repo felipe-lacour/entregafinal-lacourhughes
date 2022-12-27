@@ -207,11 +207,11 @@ footer {
   display: none; }
 
 .carteleras__titulo {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px; }
 
 .carteleras__fecha {
-  font-size: 16;
+  font-size: 14px;
   margin-bottom: 0; }
 
 .window__contenido {
@@ -247,10 +247,10 @@ footer {
       margin-bottom: 15px; }
     .nuevos-lanzamientos__contenido-texto {
       height: 60%;
-      overflow-y: scroll; }
-    .nuevos-lanzamientos__contenido__texto-sinopsis {
-      margin: 0;
+      overflow-y: scroll;
       text-align: justify; }
+    .nuevos-lanzamientos__contenido__texto-sinopsis {
+      margin: 0; }
     .nuevos-lanzamientos__contenido-info {
       display: flex;
       justify-content: space-between; }
@@ -316,7 +316,6 @@ main {
 
 .black-adam__pagina-titulo {
   font-size: 40px;
-  text-align: center;
   margin-bottom: 25px; }
 
 .media,
@@ -447,7 +446,7 @@ main {
   text-decoration: none;
   color: #d93030; }
 
-@media (max-width: 861px) {
+@media (max-width: 892px) {
   h3 {
     text-align: center; }
   .header__input {
@@ -485,6 +484,19 @@ main {
         .nuevos__lanzamientos-carteleras--individuales-imagenes__poster {
           width: 250px;
           height: 375px; } }
+
+@media (max-width: 607px) {
+  .nuevos__lanzamientos-carteleras {
+    grid-template-columns: repeat(2, 220px); }
+    .nuevos__lanzamientos-carteleras--individuales {
+      width: 220px; }
+      .nuevos__lanzamientos-carteleras--individuales-imagenes__poster {
+        width: 200px;
+        height: 300px; }
+  .carteleras__titulo {
+    font-size: 16px; }
+  .carteleras__fecha {
+    font-size: 14px; } }
 
 @media (max-width: 554px) {
   .tendencias {

@@ -1,4 +1,4 @@
-@media (max-width: 861px){
+@media (max-width: 892px){
   h3{
     text-align: center;
   }
@@ -59,6 +59,28 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 607px){
+  .nuevos__lanzamientos{
+    &-carteleras{
+      grid-template-columns: repeat(2, 220px);
+      &--individuales{
+        width: 220px;
+        &-imagenes__poster{
+          width: 200px;
+          height: 300px;
+        }
+      }
+    }
+  }
+  .carteleras__titulo{
+    font-size: 16px;
+  }
+  
+  .carteleras__fecha{
+    font-size: 14px;
   }
 }
 

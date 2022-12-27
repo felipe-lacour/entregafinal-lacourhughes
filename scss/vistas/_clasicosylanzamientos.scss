@@ -46,11 +46,11 @@
     &-texto{
       height: 60%;
       overflow-y: scroll;
+      text-align: justify;
     }
 
     &__texto-sinopsis{
       margin: 0;
-      text-align: justify;
     }
 
     &-info{
