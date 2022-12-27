@@ -322,17 +322,13 @@ main {
 .media,
 .elenco {
   margin: 0 auto;
-  max-width: 1080px;
-  min-width: 861px; }
+  max-width: 1080px; }
 
 .media__contenido {
-  margin: 0 auto;
-  max-width: 1080px;
-  min-width: 861px;
-  display: flex;
-  justify-content: space-between; }
+  margin: 0 auto; }
   .media__contenido iframe {
-    width: 670px; }
+    max-width: 670px;
+    width: 100%; }
   .media__contenido-img {
     height: 400px;
     width: 267px; }
@@ -341,7 +337,7 @@ main {
   display: flex;
   margin: 50px auto;
   max-width: 1080px;
-  min-width: 861px; }
+  padding: 10px; }
   .info__texto {
     text-align: justify;
     text-justify: inter-word; }
@@ -360,21 +356,22 @@ main {
       width: 200px;
       object-fit: cover;
       object-position: center; }
+    .info__img-responsive {
+      display: none; }
 
 .elenco {
-  display: flex;
-  flex-flow: column nowrap; }
-  .elenco__actores {
-    display: flex;
-    justify-content: space-around; }
-    .elenco__actores-individuales--img {
-      height: 100px;
-      width: 100px;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 50px; }
-    .elenco__actores-individuales--titulo {
-      margin-bottom: 3px; }
+  padding: 10px; }
+  .elenco__actores-actor {
+    width: 135px; }
+  .elenco__actores-individuales--img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px; }
+  .elenco__actores-individuales--titulo {
+    margin-bottom: 3px;
+    font-size: 14px; }
 
 .titulo__contacto {
   margin: 25px auto; }
@@ -586,3 +583,33 @@ main {
     margin-top: 25px; }
   .contenido__multi-boton--estilo {
     height: 50px; } }
+
+@media (max-width: 768px) {
+  .media__contenido-img {
+    height: 300px;
+    width: 200px; }
+  .info__img {
+    margin: 0;
+    padding: 5px;
+    width: fit-content; }
+    .info__img img {
+      height: 150px;
+      width: 150px; }
+    .info__img-responsive {
+      display: inline-block; }
+    .info__img-desktop {
+      display: none; }
+  .col-sm-6 {
+    width: fit-content; } }
+
+@media (max-width: 383px) {
+  .media__contenido-img {
+    height: 250px;
+    width: 167px; }
+  .info__img {
+    margin: 0;
+    padding: 5px;
+    width: fit-content; }
+    .info__img img {
+      height: 125px;
+      width: 125px; } }
