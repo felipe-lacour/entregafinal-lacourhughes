@@ -233,7 +233,7 @@ footer {
 .window__contenido {
   margin: 0 auto;
   max-width: 1080px; }
-  .window__contenido h2 {
+  .window__contenido h1 {
     margin-bottom: 0;
     margin-top: 50px;
     font-size: 30px;
@@ -482,7 +482,7 @@ main {
   color: #d93030; }
 
 @media (max-width: 892px) {
-  h3 {
+  h2 {
     text-align: center; }
   .header__input {
     display: none; }
