@@ -59,6 +59,8 @@
 .carteleras__titulo{
   font-size: 18px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow-y: hidden;
 }
 
 .carteleras__fecha{
