@@ -1,15 +1,12 @@
 .main__index{
-  display: grid;
-  gap: 50px;
+  @include grid (stretch, center, 50px, 50px, none, none);
   padding: 0 15px;
 }
 .tendencias {
   text-align: left;
 
   &__contenido{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
+    @include grid (stretch, flex-start, 0, 10px, repeat(2, 1fr), none);
     text-align: justify;
     text-justify: inter-word;
     max-width: 1080px;
@@ -28,8 +25,7 @@
     height: 100%;
 
     &-boton{
-      display: flex;
-      justify-content: center;
+      @include flex (row, center, stretch);
       margin-bottom: 10px;
 
       &--hipervinculo{
@@ -38,8 +34,8 @@
         button {
           height: 40px;
           margin: auto;
-          background-color: rgb(40, 46, 64);
-          color: rgb(156, 166, 196);
+          background-color: $azulOscuro;
+          color: $azulClaro;
           border: none;
           border-radius: 20px;
           width: 100%;

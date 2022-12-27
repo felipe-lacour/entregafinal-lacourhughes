@@ -34,9 +34,7 @@
 
   &__contenido{
     margin-left: 25px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
+    @include flex (column, flex-start, stretch);
 
     &-titulo{
       margin-top: 0;
@@ -54,13 +52,10 @@
     }
 
     &-info{
-      display: flex;
-      justify-content: space-between;
+      @include flex (row, space-between, stretch);
 
       &--flex{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-end;
+        @include flex (column, flex-end, stretch);
       }
     }
   }

@@ -3,14 +3,12 @@
   background-image: url(../imagenes/blkadm-fondo.jpeg);
   background-position: 50% 35%;
   height: 500px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex (row, space-around, center);
 
   &-titulo{
     font-size: 50px;
     color: rgb(156, 166, 196);
-    background-color: rgb(13, 13, 13);
+    background-color: $negroFilm;
     word-wrap: nowrap;
     width: auto;
   }
@@ -47,7 +45,7 @@ main{
 }
 
 .info {
-  display: flex;
+  @include flex (row, flex-start, stretch);
   margin: 50px auto;
   max-width: 1080px;
   padding: 10px;

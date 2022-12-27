@@ -16,9 +16,7 @@
     padding: 0 15px;
 
     &__contenido{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 200px;
-      row-gap: 10px;
+      @include grid (stretch, flex-start, 10px, 0, 1fr, 1fr 200px);
     }
 
     &__info{
@@ -37,11 +35,7 @@
     padding: 0 15px;
 
     &-carteleras{
-      display: grid;
-      grid-template-columns: repeat(2, 270px);
-      gap: 20px;
-      justify-content: space-around;
-      align-content: space-around;
+      @include grid (space-around, space-around, 20px, 20px, repeat(2, 270px), none);
 
       &--individuales{
         width: 270px;
@@ -101,9 +95,7 @@
       grid-template-columns: auto;
 
       &--individuales{
-        display: grid; 
-        grid-template-columns: repeat(2, 155px);
-        column-gap: 15px;
+        @include grid (stretch, flex-start, 0, 15px, repeat(2, 155px), none);
         width: 330px;
         height: 232.5px;
         margin: 0 5px;
@@ -133,9 +125,7 @@
 
       &-titulo{
         &--fecha{
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: flex-end;
+          @include flex (column, flex-end, stretch);
           height: 65.5px;
         }
       }
@@ -150,9 +140,7 @@
     height: 50px;
   }
   .responsive__carteleras-grid--index{
-    display: grid;
-    grid-template-rows: 40px 65.5px;
-    align-content: space-between;
+    @include grid (space-between, flex-start, 0, 0, none, 40px 65.5px);
     height: 232.5px;
 
     div{

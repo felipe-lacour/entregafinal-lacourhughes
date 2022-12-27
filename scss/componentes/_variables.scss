@@ -1,0 +1,25 @@
+$azulOscuro:rgb(40, 46, 64);
+$azulClaro:rgb(156, 166, 196);
+$negroFilm:rgb(13, 13, 13);
+
+
+@mixin flex ($flexDirection, $justifyContent, $alignItems){
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+// @include (row, flex-start, stretch);
+
+@mixin grid ($alignContent, $justifyContent, $rowGap, $columnGap, $gridColumns, $gridRows){
+  display: grid;
+  align-content: $alignContent;
+  justify-content: $justifyContent;
+  row-gap: $rowGap;
+  column-gap: $columnGap;
+  grid-template-columns: $gridColumns;
+  grid-template-rows: $gridRows;
+}
+
+// @include grid (stretch, flex-start, 0, 0, none, none);

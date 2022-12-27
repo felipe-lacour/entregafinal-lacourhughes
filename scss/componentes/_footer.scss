@@ -1,13 +1,11 @@
 footer {
-  background-color: rgb(40, 46, 64);
+  background-color: $azulOscuro;
   height: 108px;
   margin-top: 50px;
 }
 .footer{
   &__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex (row, space-between, center);
     max-width: 1080px;
     margin: 0 auto;
     height: 100%;
@@ -16,7 +14,7 @@ footer {
 
   &__contenido{
     &-texto{
-      color: rgb(156, 166, 196);
+      color: $azulClaro;
       margin-top: 50px;
     }
   }

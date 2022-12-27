@@ -1,17 +1,12 @@
 @media (max-width: 861px){
   .nuevos-lanzamientos{
-    display: grid;
-    grid-template-rows: 1fr 353px;
-    row-gap: 20px;
+    @include grid (stretch, flex-start, 20px, 0, none, 1fr 353px);
     max-width: 700px;
     height: auto;
     padding: 15px 0;
 
     &__responsive--div{
-      display: grid;
-      grid-template-columns: 232px 200px;
-      column-gap: 40px;
-      justify-content: center;
+      @include grid (stretch, center, 0, 40px, 232px 200px, none);
     }
 
     &__contenido{
@@ -28,9 +23,8 @@
     }
 
     &__imgreview-responsive{
-      display: flex;
+      @include flex (row, flex-start, center);
       width: 200px;
-      align-items: center;
     }
 
     &__imgreview{
