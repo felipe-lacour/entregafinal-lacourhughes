@@ -1,3 +1,7 @@
+.contacto{
+  padding: 15px;
+}
+
 .titulo__contacto {
   margin: 25px auto;
 
@@ -11,7 +15,8 @@
 
   form{
     margin: 0 auto;
-    width: 550px;
+    width: 100%;
+    max-width: 550px
   }
 
   &-flex{
@@ -20,7 +25,7 @@
 }
 
 .nombre{
-  width: 260px;
+  width: 49%;
   height: 35px;
   border: 2px solid $azulOscuro;
   background-color: $azulClaro;
@@ -31,7 +36,7 @@
 
 .email{
   display: block;
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 2px solid $azulOscuro;
   background-color: $azulClaro;
@@ -41,7 +46,7 @@
 }
 
 .numero{
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 2px solid $azulOscuro;
   background-color: $azulClaro;
@@ -52,7 +57,7 @@
 
 .boton__contacto{
   display: block;
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 0;
   background-color: $azulOscuro;
@@ -68,5 +73,7 @@
 }
 
 .footer__contacto{
-  margin-top: 420px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }

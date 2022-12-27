@@ -9,6 +9,11 @@
 
   }
   .info{
+    &__texto{
+      &-titulo{
+        text-align: center;
+      }
+    }
     &__img{
       margin: 0;
       padding: 5px;

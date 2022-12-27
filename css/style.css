@@ -397,6 +397,9 @@ main {
     margin-bottom: 3px;
     font-size: 14px; }
 
+.contacto {
+  padding: 15px; }
+
 .titulo__contacto {
   margin: 25px auto; }
   .titulo__contacto h1 {
@@ -409,7 +412,8 @@ main {
   align-items: stretch; }
   .form__contacto form {
     margin: 0 auto;
-    width: 550px; }
+    width: 100%;
+    max-width: 550px; }
   .form__contacto-flex {
     display: flex;
     flex-direction: row;
@@ -417,7 +421,7 @@ main {
     align-items: stretch; }
 
 .nombre {
-  width: 260px;
+  width: 49%;
   height: 35px;
   border: 2px solid #282e40;
   background-color: #9ca6c4;
@@ -427,7 +431,7 @@ main {
 
 .email {
   display: block;
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 2px solid #282e40;
   background-color: #9ca6c4;
@@ -436,7 +440,7 @@ main {
   padding: 15px; }
 
 .numero {
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 2px solid #282e40;
   background-color: #9ca6c4;
@@ -446,7 +450,7 @@ main {
 
 .boton__contacto {
   display: block;
-  width: 550px;
+  width: 100%;
   height: 35px;
   border: 0;
   background-color: #282e40;
@@ -460,7 +464,9 @@ main {
   margin: 5px 0; }
 
 .footer__contacto {
-  margin-top: 420px; }
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
 
 .noexiste h1 {
   text-align: center; }
@@ -529,7 +535,8 @@ main {
         width: 200px;
         height: 300px; }
   .carteleras__titulo {
-    font-size: 16px; }
+    font-size: 16px;
+    white-space: normal; }
   .carteleras__fecha {
     font-size: 14px; } }
 
@@ -653,6 +660,8 @@ main {
   .media__contenido-img {
     height: 300px;
     width: 200px; }
+  .info__texto-titulo {
+    text-align: center; }
   .info__img {
     margin: 0;
     padding: 5px;
