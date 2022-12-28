@@ -38,7 +38,6 @@ header {
 
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 1080px;
@@ -108,7 +107,6 @@ footer {
 
 .footer__menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 1080px;
@@ -127,24 +125,17 @@ footer {
 
 .main__index {
   display: grid;
-  align-content: stretch;
   justify-content: center;
   row-gap: 50px;
   column-gap: 50px;
-  grid-template-columns: none;
-  grid-template-rows: none;
   padding: 0 15px; }
 
 .tendencias {
   text-align: left; }
   .tendencias__contenido {
     display: grid;
-    align-content: stretch;
-    justify-content: flex-start;
-    row-gap: 0;
     column-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: none;
     text-align: justify;
     text-justify: inter-word;
     max-width: 1080px; }
@@ -157,9 +148,7 @@ footer {
     height: 100%; }
     .tendencias__info-boton {
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      align-items: stretch;
       margin-bottom: 10px; }
       .tendencias__info-boton--hipervinculo {
         width: 80%; }
@@ -191,9 +180,7 @@ footer {
   max-width: 1080px; }
   .nuevos__lanzamientos-carteleras {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch; }
+    justify-content: space-between; }
     .nuevos__lanzamientos-carteleras h6, .nuevos__lanzamientos-carteleras h4 {
       color: #0d0d0d; }
     .nuevos__lanzamientos-carteleras--individuales {
@@ -259,9 +246,7 @@ footer {
   .nuevos-lanzamientos__contenido {
     margin-left: 25px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch; }
+    flex-direction: column; }
     .nuevos-lanzamientos__contenido-titulo {
       margin-top: 0;
       margin-bottom: 15px; }
@@ -273,14 +258,11 @@ footer {
       margin: 0; }
     .nuevos-lanzamientos__contenido-info {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch; }
+      justify-content: space-between; }
       .nuevos-lanzamientos__contenido-info--flex {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: stretch; }
+        justify-content: flex-end; }
   .nuevos-lanzamientos-img__review-percentage {
     height: 125px;
     width: 125px;
@@ -291,8 +273,6 @@ footer {
 .contenido {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
   margin: 0 auto;
   padding: 0; }
   .contenido__titulo {
@@ -325,7 +305,6 @@ footer {
   background-position: 50% 35%;
   height: 500px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   .black-adam__fondo-titulo {
@@ -359,9 +338,6 @@ main {
 
 .info {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
   margin: 50px auto;
   max-width: 1080px;
   padding: 10px; }
@@ -410,18 +386,14 @@ main {
 
 .form__contacto {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
   .form__contacto form {
     margin: 0 auto;
     width: 100%;
     max-width: 550px; }
   .form__contacto-flex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch; }
+    justify-content: space-between; }
 
 .nombre {
   width: 49%;
@@ -496,10 +468,7 @@ main {
     padding: 0 15px; }
     .tendencias__contenido {
       display: grid;
-      align-content: stretch;
-      justify-content: flex-start;
       row-gap: 10px;
-      column-gap: 0;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 200px; }
     .tendencias__info-texto {
@@ -516,8 +485,7 @@ main {
       justify-content: space-around;
       row-gap: 20px;
       column-gap: 20px;
-      grid-template-columns: repeat(2, 270px);
-      grid-template-rows: none; }
+      grid-template-columns: repeat(2, 270px); }
       .nuevos__lanzamientos-carteleras--individuales {
         width: 270px;
         padding: 10px; }
@@ -556,12 +524,8 @@ main {
       grid-template-columns: auto; }
       .nuevos__lanzamientos-carteleras--individuales {
         display: grid;
-        align-content: stretch;
-        justify-content: flex-start;
-        row-gap: 0;
         column-gap: 15px;
         grid-template-columns: repeat(2, 155px);
-        grid-template-rows: none;
         width: 330px;
         height: 232.5px;
         margin: 0 5px;
@@ -581,7 +545,6 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: stretch;
       height: 65.5px; }
   .boton-desktop {
     display: none; }
@@ -591,10 +554,6 @@ main {
   .responsive__carteleras-grid--index {
     display: grid;
     align-content: space-between;
-    justify-content: flex-start;
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-columns: none;
     grid-template-rows: 40px 65.5px;
     height: 232.5px; }
     .responsive__carteleras-grid--index div {
@@ -603,23 +562,16 @@ main {
 @media (max-width: 861px) {
   .nuevos-lanzamientos {
     display: grid;
-    align-content: stretch;
-    justify-content: flex-start;
     row-gap: 20px;
-    column-gap: 0;
-    grid-template-columns: none;
     grid-template-rows: 1fr 353px;
     max-width: 700px;
     height: auto;
     padding: 15px 0; }
     .nuevos-lanzamientos__responsive--div {
       display: grid;
-      align-content: stretch;
       justify-content: center;
-      row-gap: 0;
       column-gap: 40px;
-      grid-template-columns: 232px 200px;
-      grid-template-rows: none; }
+      grid-template-columns: 232px 200px; }
     .nuevos-lanzamientos__contenido {
       justify-content: space-around;
       margin: 0 auto;
@@ -630,8 +582,6 @@ main {
       width: 232px; }
     .nuevos-lanzamientos__imgreview-responsive {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
       align-items: center;
       width: 200px; }
     .nuevos-lanzamientos__imgreview {
