@@ -18,7 +18,7 @@ $negroFilm:rgb(13, 13, 13);
   @if $justifyContent != flex-start{justify-content: $justifyContent;}
   @if $rowGap != 0 {row-gap: $rowGap;}
   @if $columnGap != 0 {column-gap: $columnGap;}
-  @if $gridColumns != none{grid-template-columns: $gridColumns;} @else {}
+  @if $gridColumns != none{grid-template-columns: $gridColumns;}
   @if $gridRows != none {grid-template-rows: $gridRows;}
 }
 
