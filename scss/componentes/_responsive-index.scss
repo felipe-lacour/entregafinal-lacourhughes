@@ -30,7 +30,9 @@
       }
     }
   }
-
+  .movimiento{
+    height: 1041.6px;
+  }
   .nuevos__lanzamientos{
     padding: 0 15px;
 
@@ -76,6 +78,9 @@
   
   .carteleras__fecha{
     font-size: 14px;
+  }
+  .movimiento{
+    height: 882px;
   }
 }
 
@@ -149,4 +154,10 @@
     }
   }
 
+  .label-checkbox{
+    display: none;
+  }
+  .movimiento{
+    height: 1020px;
+  }
 }

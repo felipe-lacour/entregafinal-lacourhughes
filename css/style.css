@@ -95,8 +95,6 @@ header {
 @keyframes animacion-logo {
   0% {
     transform: scale(0); }
-  50% {
-    transform: scale(0.5); }
   100% {
     transform: scale(1); } }
 
@@ -177,10 +175,14 @@ footer {
 .nuevos__lanzamientos {
   text-align: left;
   width: 100%;
-  max-width: 1080px; }
+  max-width: 1080px;
+  overflow-x: hidden; }
+  .nuevos__lanzamientos-contenido {
+    height: max-content; }
   .nuevos__lanzamientos-carteleras {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 15px; }
     .nuevos__lanzamientos-carteleras h6, .nuevos__lanzamientos-carteleras h4 {
       color: #0d0d0d; }
     .nuevos__lanzamientos-carteleras--individuales {
@@ -207,6 +209,26 @@ footer {
     border-radius: 20px;
     cursor: pointer; }
 
+.titulo-principal {
+  position: relative; }
+
+.label-checkbox {
+  position: absolute;
+  right: 25px;
+  padding: 2px;
+  border: 2px solid #282e40;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s; }
+  .label-checkbox:hover {
+    background-color: #282e40;
+    color: #9ca6c4; }
+  .label-checkbox:active {
+    opacity: 0.6; }
+
+.label-text {
+  margin: 0; }
+
 .boton-responsive {
   display: none; }
 
@@ -219,6 +241,41 @@ footer {
 .carteleras__fecha {
   font-size: 16px;
   margin-bottom: 0; }
+
+.movimiento {
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  position: relative;
+  height: 451px; }
+  .movimiento-carteleras {
+    display: none; }
+
+.uno {
+  position: absolute;
+  left: 0%;
+  transition: all 1s;
+  width: 100%; }
+
+.dos {
+  position: absolute;
+  left: 100%;
+  visibility: hidden;
+  transition: all 1s;
+  width: 100%; }
+
+#movimiento-carteleras-uno:checked ~ .uno {
+  left: -100%; }
+
+#movimiento-carteleras-uno:checked ~ .dos {
+  visibility: visible;
+  left: 0%; }
+
+#movimiento-carteleras-dos:checked ~ .uno {
+  left: -100%; }
+
+#movimiento-carteleras-dos:checked ~ .dos {
+  visibility: visible;
+  left: 0%; }
 
 .window__contenido {
   margin: 0 auto;
@@ -477,6 +534,8 @@ main {
       .tendencias__info-texto p {
         overflow-y: scroll;
         height: 175px; }
+  .movimiento {
+    height: 1041.6px; }
   .nuevos__lanzamientos {
     padding: 0 15px; }
     .nuevos__lanzamientos-carteleras {
@@ -509,7 +568,9 @@ main {
     font-size: 16px;
     white-space: normal; }
   .carteleras__fecha {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .movimiento {
+    height: 882px; } }
 
 @media (max-width: 554px) {
   .tendencias {
@@ -557,7 +618,11 @@ main {
     grid-template-rows: 40px 65.5px;
     height: 232.5px; }
     .responsive__carteleras-grid--index div {
-      width: 155px; } }
+      width: 155px; }
+  .label-checkbox {
+    display: none; }
+  .movimiento {
+    height: 1020px; } }
 
 @media (max-width: 861px) {
   .nuevos-lanzamientos {

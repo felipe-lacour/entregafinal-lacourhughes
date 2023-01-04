@@ -2,9 +2,15 @@
   text-align: left;
   width: 100%;
   max-width: 1080px;
+  overflow-x: hidden;
+
+  &-contenido{
+    height: max-content;
+  }
 
   &-carteleras{
     @include flex (row, space-between, stretch);
+    padding: 15px;
 
     h6, h4{
       color: $negroFilm;
@@ -52,6 +58,36 @@
 
 }
 
+.titulo-principal{
+  position: relative;
+}
+
+.label{
+  &-checkbox{
+  position: absolute;
+  right: 25px;
+  padding: 2px;
+  border: 2px solid $azulOscuro;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s;
+
+  &:hover{
+    background-color: $azulOscuro;
+    color: $azulClaro;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+&-text{
+  margin: 0;
+}
+
+}
+
 .boton-responsive{
   display: none;
 }
@@ -67,3 +103,51 @@
   font-size: 16px;
   margin-bottom: 0;
 }
+
+
+
+.movimiento{
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  position: relative;
+  height: 451px;
+  &-carteleras{
+    display: none;
+  }
+}
+
+.uno{
+  position: absolute;
+  left: 0%;
+  transition: all 1s;
+  width: 100%;
+}
+
+.dos{
+  position: absolute;
+  left: 100%;
+  visibility: hidden;
+  transition: all 1s;
+  width: 100%;
+}
+
+#movimiento-carteleras-uno:checked ~ .uno {
+  left: -100%;
+}
+
+#movimiento-carteleras-uno:checked ~ .dos {
+  visibility: visible;
+  left: 0%;
+}
+
+#movimiento-carteleras-dos:checked ~ .uno {
+  left: -100%;
+}
+
+#movimiento-carteleras-dos:checked ~ .dos {
+  visibility: visible;
+  left: 0%;
+}
+
+
+
