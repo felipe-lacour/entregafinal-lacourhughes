@@ -45,6 +45,7 @@
       height: 60%;
       overflow-y: scroll;
       text-align: justify;
+
     }
 
     &__texto-sinopsis{
@@ -53,6 +54,7 @@
 
     &-info{
       @include flex (row, space-between, stretch);
+      margin-top: 10px;
 
       &--flex{
         @include flex (column, flex-end, stretch);
@@ -66,5 +68,9 @@
     object-fit: cover;
     object-position: center;
     border-radius: 75px;
+  }
+
+  &__guia{
+    margin-top: 45px;
   }
 }

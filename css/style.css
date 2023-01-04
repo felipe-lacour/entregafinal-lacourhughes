@@ -112,6 +112,9 @@ footer {
   height: 100%;
   padding: 0 15px; }
 
+.footer__cyl {
+  margin-top: 5px; }
+
 .footer__contenido-texto {
   color: #9ca6c4;
   margin-top: 50px; }
@@ -315,7 +318,8 @@ footer {
       margin: 0; }
     .nuevos-lanzamientos__contenido-info {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-top: 10px; }
       .nuevos-lanzamientos__contenido-info--flex {
         display: flex;
         flex-direction: column;
@@ -326,6 +330,8 @@ footer {
     object-fit: cover;
     object-position: center;
     border-radius: 75px; }
+  .nuevos-lanzamientos__guia {
+    margin-top: 45px; }
 
 .contenido {
   display: flex;
@@ -653,7 +659,9 @@ main {
       display: none; }
     .nuevos-lanzamientos-img__review-percentage {
       height: 200px;
-      width: 200px; } }
+      width: 200px; }
+  .contenido__info-link p {
+    margin-bottom: 0; } }
 
 @media (max-width: 471px) {
   .nuevos-lanzamientos__responsive--div {
