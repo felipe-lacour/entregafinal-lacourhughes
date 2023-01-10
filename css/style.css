@@ -363,9 +363,16 @@ footer {
   margin-bottom: 50px; }
 
 /* div black adam*/
-.black-adam__fondo {
+#blackpantherfondo {
+  background-image: url(../imagenes/blkpnthr-fondo.jpg);
+  background-size: cover;
+  background-position: center; }
+
+#blkadmfondo {
   background-image: url(../imagenes/blkadm-fondo.jpeg);
-  background-position: 50% 35%;
+  background-position: 50% 35%; }
+
+.black-adam__fondo {
   height: 500px;
   display: flex;
   justify-content: space-around;
@@ -434,7 +441,8 @@ main {
     width: 100px;
     object-fit: cover;
     object-position: top;
-    border-radius: 50px; }
+    border-radius: 50px;
+    margin-bottom: 10px; }
   .elenco__actores-individuales--titulo {
     margin-bottom: 3px;
     font-size: 14px; }

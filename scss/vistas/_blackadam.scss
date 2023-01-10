@@ -1,7 +1,16 @@
 /* div black adam*/
-.black-adam__fondo {
+#blackpantherfondo{
+  background-image: url(../imagenes/blkpnthr-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#blkadmfondo{
   background-image: url(../imagenes/blkadm-fondo.jpeg);
   background-position: 50% 35%;
+}
+
+.black-adam__fondo {
   height: 500px;
   @include flex (row, space-around, center);
 
@@ -95,6 +104,7 @@ main{
         object-fit: cover;
         object-position: top;
         border-radius: 50px;
+        margin-bottom: 10px;
       }
 
       &--titulo{
