@@ -10,7 +10,7 @@ $negroFilm:rgb(13, 13, 13);
   @if $alignItems != stretch {align-items: $alignItems;}
 }
 
-// @include (row, flex-start, stretch);
+// @include flex (row, flex-start, stretch);
 
 @mixin grid ($alignContent, $justifyContent, $rowGap, $columnGap, $gridColumns, $gridRows){
   display: grid;
