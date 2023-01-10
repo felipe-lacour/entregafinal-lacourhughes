@@ -303,6 +303,8 @@ footer {
     height: 350px; }
   .nuevos-lanzamientos__imgreview-responsive {
     display: none; }
+  .nuevos-lanzamientos__titulo {
+    position: relative; }
   .nuevos-lanzamientos__contenido {
     margin-left: 25px;
     display: flex;
@@ -310,6 +312,16 @@ footer {
     .nuevos-lanzamientos__contenido-titulo {
       margin-top: 0;
       margin-bottom: 15px; }
+    .nuevos-lanzamientos__contenido-boton {
+      position: absolute;
+      top: 0px;
+      right: 15px; }
+      .nuevos-lanzamientos__contenido-boton--estilo {
+        background-color: #282e40;
+        color: #9ca6c4;
+        border: 0;
+        border-radius: 45px;
+        padding: 5px 10px; }
     .nuevos-lanzamientos__contenido-texto {
       height: 60%;
       overflow-y: scroll;
@@ -514,21 +526,56 @@ main {
   bottom: 0px;
   width: 100%; }
 
+main {
+  position: relative; }
+
+.boton_regreso {
+  position: absolute;
+  top: -35px;
+  left: 15px;
+  background-color: #282e40;
+  color: #9ca6c4;
+  border: 0;
+  border-radius: 45px;
+  padding: 5px 8px;
+  font-size: small; }
+
+.jurassic_main {
+  max-width: 1080px;
+  margin: 50px auto; }
+
+.jurassic_section-carousel {
+  margin-top: 50px; }
+
 .jurassic_titulo {
   margin-bottom: 25px; }
 
 .jurassic_carousel {
-  padding: 15px;
+  padding: 0 15px;
   background-color: #9ca6c4;
-  margin-bottom: 25px; }
+  max-width: 900px;
+  margin: 0 auto; }
   .jurassic_carousel-img {
     height: 300px;
     object-fit: cover; }
 
 .jurassic_trailer {
-  width: 100%;
-  height: 330px;
-  padding: 15px; }
+  padding: 0 15px;
+  max-width: 1040px;
+  margin: 25px auto 50px auto;
+  display: grid;
+  justify-content: center;
+  column-gap: 15px;
+  grid-template-columns: 65% 30%; }
+  .jurassic_trailer-iframe {
+    width: 100%;
+    height: 100%; }
+  .jurassic_trailer-poster {
+    width: 100%; }
+
+.jurassic_div-info {
+  max-width: 1080px;
+  margin: 0 auto; }
 
 .jurassic_sinopsis-texto {
   text-align: justify;
@@ -556,8 +603,7 @@ main {
     object-fit: cover;
     object-position: center; }
   .jurassic_simbolos-iconos__review {
-    max-width: 200px;
-    display: flex; }
+    max-width: 200px; }
   .jurassic_simbolos-iconos__redes {
     display: grid;
     row-gap: 10px;
@@ -779,3 +825,51 @@ main {
     .info__img img {
       height: 125px;
       width: 125px; } }
+
+@media (min-width: 460px) {
+  .boton_regreso {
+    font-size: medium;
+    padding: 10px 15px; } }
+
+@media (min-width: 600px) {
+  .jurassic_carousel {
+    height: 380px; }
+    .jurassic_carousel-img {
+      height: 380px; } }
+
+@media (min-width: 700px) {
+  .jurassic_carousel {
+    height: 400px; }
+    .jurassic_carousel-img {
+      height: 400px; } }
+
+@media (min-width: 900px) {
+  .jurassic_carousel {
+    height: 450px; }
+    .jurassic_carousel-img {
+      height: 450px; } }
+
+@media (min-width: 800px) {
+  .jurassic_div-info {
+    display: grid;
+    grid-template-columns: 75% 25%; }
+  .jurassic_simbolos-titulos {
+    display: none; }
+  .jurassic_simbolos-iconos {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr; }
+    .jurassic_simbolos-iconos__review--flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+    .jurassic_simbolos-iconos__redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 90px; }
+      .jurassic_simbolos-iconos__redes--flex {
+        justify-content: center; } }

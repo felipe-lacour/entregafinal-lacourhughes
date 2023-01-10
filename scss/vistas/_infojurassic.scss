@@ -1,13 +1,40 @@
+main{
+  position: relative;
+}
+
+.boton_regreso{
+  position: absolute;
+  top: -35px;
+  left: 15px;
+  background-color: $azulOscuro;
+  color: $azulClaro;
+  border: 0;
+  border-radius: 45px;
+  padding: 5px 8px;
+  font-size: small;
+}
+
 .jurassic{
+  &_main{
+    max-width: 1080px;
+    margin: 50px auto;
+  }
+
+  &_section{
+    &-carousel{
+      margin-top: 50px;
+    }
+  }
+
   &_titulo{
     margin-bottom: 25px;
   }
 
   &_carousel{
-    padding: 15px;
+    padding: 0 15px;
     background-color: $azulClaro;
-    margin-bottom: 25px;
-
+    max-width: 900px;
+    margin: 0 auto;
     &-img{
       height: 300px;
       object-fit: cover;
@@ -15,11 +42,26 @@
   }
 
   &_trailer{
-    width: 100%;
-    height: 330px;
-    padding: 15px;
-  }
+    padding: 0 15px;    
+    max-width: 1040px;
+    margin: 25px auto 50px auto;
+    @include grid (stretch, center, 0, 15px, 65% 30%, none);
 
+    &-iframe{
+      width: 100%;
+      height: 100%;
+    }
+
+    &-poster{
+      width: 100%;
+    }
+  }
+  &_div{
+    &-info{
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+  }
   &_sinopsis{
     &-texto{
       text-align: justify;
@@ -52,7 +94,6 @@
 
       &__review{
         max-width: 200px;
-        @include flex (row, flex-start, stretch);
       }
 
       &__redes{

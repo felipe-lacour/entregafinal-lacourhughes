@@ -31,7 +31,9 @@
   &__imgreview-responsive{
     display: none;
   }
-
+  &__titulo{
+    position: relative;
+  }
   &__contenido{
     margin-left: 25px;
     @include flex (column, flex-start, stretch);
@@ -40,7 +42,19 @@
       margin-top: 0;
       margin-bottom: 15px;
     }
+    &-boton{
+      position: absolute;
+      top: 0px;
+      right: 15px;
 
+      &--estilo{
+        background-color: $azulOscuro;
+        color: $azulClaro;
+        border: 0;
+        border-radius: 45px;
+        padding: 5px 10px;
+      }
+    }
     &-texto{
       height: 60%;
       overflow-y: scroll;
