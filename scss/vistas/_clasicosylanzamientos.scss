@@ -31,9 +31,6 @@
   &__imgreview-responsive{
     display: none;
   }
-  &__titulo{
-    position: relative;
-  }
   &__contenido{
     margin-left: 25px;
     @include flex (column, flex-start, stretch);
@@ -43,10 +40,6 @@
       margin-bottom: 15px;
     }
     &-boton{
-      position: absolute;
-      top: 0px;
-      right: 15px;
-
       &--estilo{
         background-color: $azulOscuro;
         color: $azulClaro;
@@ -86,5 +79,15 @@
 
   &__guia{
     margin-top: 45px;
+  }
+}
+
+#titulo_clasicos{
+  @include flex (row, space-between, center);
+  vertical-align: center;
+  margin-bottom: 15px;
+
+  h2{
+    margin: 0;
   }
 }
