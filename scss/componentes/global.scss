@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: $azulClaro;
+  background-color: rgb(156, 166, 196);
   font-family: Roboto, Arial;
 }
 
@@ -43,6 +43,6 @@ button:active{
   font-weight: bold;
 }
 
-p{
-  scrollbar-color: rgba(0, 0, 0, 0.5);
+div{
+  scrollbar-color: none;
 }

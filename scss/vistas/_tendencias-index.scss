@@ -47,6 +47,9 @@
     &-texto{
       overflow-y: scroll;
       height: 266px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       p{
         overflow-y: scroll;
         height: 266px;
@@ -54,7 +57,6 @@
       }
     }
   }
-
 }
 
 
